@@ -109,9 +109,9 @@ Siendo que después de la ejecución se va a obtener la siguiente asignación de
 
 ## 6. Respuesta y medición
 
-- Variable respuesta:
-- Período de medición:
-- Quién registra y cómo (¿ciego?):
+- Variable respuesta: ventas producto por tienda - semana medido en unidades monetarias.
+- Período de medición: cuatro semanas consecutivas.
+- Quién registra y cómo (¿ciego?): el responsable de caja podría ser el encargado de, tras terminar cada semana, recolectar los datos e indicar condición A o B. No tiene porque conocer el experimento. Sin embargo, los encargados de bodega o acomodadores de los productos si o sí sabrían la condición durante la semana en curso pues serían los encargados de acomodar los productos.
 
 ## 7. Factores a controlar (mínimo 4)
 
