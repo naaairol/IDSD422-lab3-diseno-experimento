@@ -41,6 +41,10 @@ Cada tienda - semana funciona como su propio grupo de control al permitir compra
 
 
 ```python
+
+import numpy as np
+import pandas as pd
+
 # Tiendas
 tiendas=["Quito Norte", "Quito Sur", "Guayaquil Centro", "Guayaquil Norte", "Cuenca Centro", "Cuenca Sur", "Ambato Centro", "Manta", "Loja", "Machala"]
 
@@ -132,6 +136,25 @@ El experimento podría qudar invalidado si, durante el tiempo que sucede no se m
 
 *Escribe `scripts/comparacion_experimento.py` (o `.R`): debe cargar `plantillas/registro_experimento.csv` y calcular el promedio de `ventas_producto` por `ubicacion`. Incluye la salida y responde:*
 
+```python
+ubicacion
+habitual             1040.0
+pasillo_principal    1335.0
+Name: ventas_producto, dtype: float64
+ubicacion
+pasillo_principal    2
+habitual             2
+Name: count, dtype: int64
+```
+
 - ¿Qué grupo muestra mayor venta promedio en la plantilla?
+
+Dentro del CSV propuesto, se obtiene que el grupo con mayor venta promedio es el grupo cuya ubicación del producto es `pasillo_principal`.
+
 - ¿Por qué con 4 filas no se puede concluir nada sobre el efecto de la ubicación?
+
+La plantilla incluye solo una semana y una ubicación por tienda dentro de esas 4 filas. Resulta imposible comparar cada tienda consigo misma al únicamente indicar los resultados de una sola ubicación, es decir, no existe un grupo de control.
+
 - Si el experimento se ejecutara con tu protocolo, ¿qué le faltaría a este análisis para ser justo?
+
+Si el experimento se ejecutara tal y como se ha planteado con el protocolo actual, faltaría obtener el promedio, de cada una de las 10 tiendas, para las dos ubicaciones del producto. Así como considerar que el experimento se desarrolla durante un espacio de tiempo de 4 semanas, de esta forma obteniendo la unidad experimental aquí estipulada. 
