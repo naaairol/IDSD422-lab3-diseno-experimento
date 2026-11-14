@@ -23,9 +23,9 @@ Se eligen 10 para el experimento porque cambiar la ubicación en todas obligarí
 
 ## 3. Factor, niveles y tratamiento
 
-- **Factor** (variable manipulada): 
-- **Niveles** (valores del factor): 
-- **Tratamiento** (combinación asignada): 
+- **Factor** (variable manipulada): ubicación del producto estrella.
+- **Niveles** (valores del factor): ubicación habitual, pasillo principal.
+- **Tratamiento** (combinación asignada): asignar aleatoriamente la ubicación inicial del producto en cada tienda y alternar cada semana.
 
 ## 4. Grupo de control
 
