@@ -1,12 +1,16 @@
 # Plantilla de protocolo — Experimento de ubicación de producto
 
-**Equipo:** ___ · **Integrantes:** ___ · **Fecha:** 27/10/2026
+**Equipo:** Business Intelligence · **Integrantes:** Orlin Emanuel Encalada Oña · **Fecha:** 13/11/2026
 
 Completa cada sección. Usa commits por sección; la historia del repositorio se revisa.
 
 ## 1. Pregunta e hipótesis
 
-*Hipótesis que el experimento pueda confirmar o refutar (formúlela como una comparación medible entre los grupos).*
+¿Ubicar el producto estrella, el más vendido, de RetailAndina aumenta la venta semanal de dicho producto en comparación a mantenerlo en su lugar habitual?
+
+    H0: la venta promedio semanal del producto estrella ubicado en el pasillo principal es menor o igual que mantenerlo en su lugar habitual.
+    H1: la venta promedio semanal del producto estrella ubicado en el pasillo principal es mayor que mantenerlo en su lugar habitual.
+
 
 ## 2. Unidad experimental
 

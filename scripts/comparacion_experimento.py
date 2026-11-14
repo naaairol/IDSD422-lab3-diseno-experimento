@@ -3,7 +3,21 @@
 #   python scripts/comparacion_experimento.py
 
 # TODO 1: carga plantillas/registro_experimento.csv con pandas
+
+import pandas as pd
+
+# 1. Cargar
+df = pd.read_csv("registro_experimento.csv")
+
 # TODO 2: calcula e imprime el promedio de ventas_producto por ubicacion
+
+# 2. Promedio de ventas de producto por ubicacion
+df.groupby("ubicacion")["ventas_producto"].mean()
+
 # TODO 3: imprime el número de registros por grupo (value_counts)
+
+# 3. Contar el numero de productos por ubicacion
+df["ubicacion"].value_counts()
+
 # TODO 4: escribe 2–3 líneas de interpretación (sección 9 de la plantilla):
 #         por qué con 4 filas no se puede concluir y qué le faltaría al análisis
