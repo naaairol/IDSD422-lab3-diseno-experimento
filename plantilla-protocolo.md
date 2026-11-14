@@ -8,26 +8,30 @@ Completa cada sección. Usa commits por sección; la historia del repositorio se
 
 ¿Ubicar el producto estrella, el más vendido, de RetailAndina aumenta la venta semanal de dicho producto en comparación a mantenerlo en su lugar habitual?
 
-    H0: la venta promedio semanal del producto estrella ubicado en el pasillo principal es menor o igual que mantenerlo en su lugar habitual.
-    H1: la venta promedio semanal del producto estrella ubicado en el pasillo principal es mayor que mantenerlo en su lugar habitual.
+H0: la venta promedio semanal del producto estrella ubicado en el pasillo principal es menor o igual que mantenerlo en su lugar habitual.
 
+H1: la venta promedio semanal del producto estrella ubicado en el pasillo principal es mayor que mantenerlo en su lugar habitual.
 
 ## 2. Unidad experimental
 
 *¿Qué recibe el tratamiento? ¿Cuántas unidades se incluyen?*
 
-- Unidad:
-- Número de unidades y justificación:
+- Unidad: tienda - semana
+- Número de unidades y justificación: 10 tiendas durante 4 semanas. Un total de 40.
+
+Se eligen 10 para el experimento porque cambiar la ubicación en todas obligaría a mover inventario en toda la cadena antes de saber si el cambio produce un efecto. La muestra limita el esfuerzo operativo y permite comparar ambas ubicaciones dentro de cada tienda.
 
 ## 3. Factor, niveles y tratamiento
 
-- **Factor** (variable manipulada):
-- **Niveles** (valores del factor):
-- **Tratamiento** (combinación asignada):
+- **Factor** (variable manipulada): 
+- **Niveles** (valores del factor): 
+- **Tratamiento** (combinación asignada): 
 
 ## 4. Grupo de control
 
 *¿Cuál es la referencia sin tratamiento y qué rol cumple?*
+
+
 
 ## 5. Aleatorización
 
