@@ -126,6 +126,8 @@ Siendo que después de la ejecución se va a obtener la siguiente asignación de
 
 *¿Qué podría invalidar el experimento si no se controla? ¿Qué no se podrá concluir?*
 
+El experimento podría qudar invalidado si, durante el tiempo que sucede no se mantiene el stock suficiente del producto, se activan promociones de tiempo limitado, se promociona un producto que resulta ser la competencia directa del cual se está experimentando, etc. Además, la cantidad de tiendas tomadas para el experimento podrían limitar la precisión y posibilidad de generalizar el resultado hacia toda la cadena. De forma que no se podría ser concluyente en cuanto a la generalización de la hipótesis se refiere.
+
 ## 9. Comparación en código (Python/R)
 
 *Escribe `scripts/comparacion_experimento.py` (o `.R`): debe cargar `plantillas/registro_experimento.csv` y calcular el promedio de `ventas_producto` por `ubicacion`. Incluye la salida y responde:*
