@@ -117,10 +117,10 @@ Siendo que después de la ejecución se va a obtener la siguiente asignación de
 
 | Factor a controlar | Cómo se controla o registra |
 |---|---|
-| 1. | |
-| 2. | |
-| 3. | |
-| 4. | |
+| 1. Promociones | Evitar incluir al producto en promociones o registrar la tienda-semana en donde estuvo activa la promoción|
+| 2. Precio | Mantenerlo constante o registrar alternaciones en la tienda-semana |
+| 3. Festividades y eventos masivos | Verificar próximas festividades, feriados o eventos que podrían afectar la venta del producto e indicar en que semana suceden|
+| 4. Visualización del producto | Constante durante el tiempo que dura el experimento en todas las tiendas|
 
 ## 8. Limitaciones del diseño
 
