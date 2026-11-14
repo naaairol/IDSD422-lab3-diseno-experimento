@@ -39,6 +39,74 @@ Cada tienda - semana funciona como su propio grupo de control al permitir compra
 
 - **Línea de código de la asignación (Python o R):** escribe el comando que asigna al azar tus N unidades a los dos grupos (tratamiento y control) y ejecútalo con semilla. Incluye el resultado de una corrida y explica por qué el sorteo reparte los factores desconocidos entre los grupos.
 
+
+```python
+# Tiendas
+tiendas=["Quito Norte", "Quito Sur", "Guayaquil Centro", "Guayaquil Norte", "Cuenca Centro", "Cuenca Sur", "Ambato Centro", "Manta", "Loja", "Machala"]
+
+# Semanas
+semanas = [1,2,3,4]
+
+# Sorteo de la condicion inicial (aleatorización reproducible)
+rng = np.random.default_rng(1234597)
+primera = rng.choice(["pasillo_principal", "habitual"], size=len(tiendas))
+
+# Tienda - Semana
+filas = []
+for tienda, cond in zip(tiendas, primera):
+    otra = "habitual" if cond=="pasillo_principal" else "pasillo_principal"
+    for s in semanas:
+      filas.append({"tienda": tienda, "semana": s, "ubicacion":cond if s%2 == 1 else otra})
+diseno = pd.DataFrame(filas)
+```
+
+Siendo que después de la ejecución se va a obtener la siguiente asignación de tiendas con la ubicación del producto inicializada de manera aleatoria y alternada con el paso de cada semana.
+
+```python
+              tienda  semana          ubicacion
+0        Quito Norte       1           habitual
+1        Quito Norte       2  pasillo_principal
+2        Quito Norte       3           habitual
+3        Quito Norte       4  pasillo_principal
+4          Quito Sur       1  pasillo_principal
+5          Quito Sur       2           habitual
+6          Quito Sur       3  pasillo_principal
+7          Quito Sur       4           habitual
+8   Guayaquil Centro       1           habitual
+9   Guayaquil Centro       2  pasillo_principal
+10  Guayaquil Centro       3           habitual
+11  Guayaquil Centro       4  pasillo_principal
+12   Guayaquil Norte       1  pasillo_principal
+13   Guayaquil Norte       2           habitual
+14   Guayaquil Norte       3  pasillo_principal
+15   Guayaquil Norte       4           habitual
+16     Cuenca Centro       1  pasillo_principal
+17     Cuenca Centro       2           habitual
+18     Cuenca Centro       3  pasillo_principal
+19     Cuenca Centro       4           habitual
+20        Cuenca Sur       1           habitual
+21        Cuenca Sur       2  pasillo_principal
+22        Cuenca Sur       3           habitual
+23        Cuenca Sur       4  pasillo_principal
+24     Ambato Centro       1           habitual
+25     Ambato Centro       2  pasillo_principal
+26     Ambato Centro       3           habitual
+27     Ambato Centro       4  pasillo_principal
+28             Manta       1           habitual
+29             Manta       2  pasillo_principal
+30             Manta       3           habitual
+31             Manta       4  pasillo_principal
+32              Loja       1           habitual
+33              Loja       2  pasillo_principal
+34              Loja       3           habitual
+35              Loja       4  pasillo_principal
+36           Machala       1  pasillo_principal
+37           Machala       2           habitual
+38           Machala       3  pasillo_principal
+39           Machala       4           habitual
+```
+
+
 ## 6. Respuesta y medición
 
 - Variable respuesta:
