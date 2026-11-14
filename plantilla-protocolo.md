@@ -31,7 +31,7 @@ Se eligen 10 para el experimento porque cambiar la ubicación en todas obligarí
 
 *¿Cuál es la referencia sin tratamiento y qué rol cumple?*
 
-
+Cada tienda - semana funciona como su propio grupo de control al permitir comprar el promedio de venta semanal del producto estrella mientras está ubicado en su lugar habitual frente al estar en el pasillo principal. Esto permite comparar las ventas entre una ubicación y otra independientemente de las diferencias que existan entre las tiendas; tamaño, clientela, etc.
 
 ## 5. Aleatorización
 
